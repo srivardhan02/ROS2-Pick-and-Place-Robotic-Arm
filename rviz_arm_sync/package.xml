@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>rviz_arm_sync</name>
+  <version>0.1.0</version>
+  <description>Mirrors RViz joint sliders (/joint_states) onto the real arm via /arm/joint_command</description>
+  <maintainer email="you@example.com">SRIVARDHAN S.</maintainer>
+  <license>MIT</license>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>robot_arm_controller</exec_depend>
+  <exec_depend>robotic_arm_description</exec_depend>
+
+  <export><build_type>ament_python</build_type></export>
+</package>

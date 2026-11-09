@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<robot name="robotic_arm">
+  <!-- Generated from Robotic_Arm_3D_Model.STEP. Zero pose = pose stored in the STEP file. -->
+  <link name="base_link">
+    <inertial><origin xyz="0.002889 -0.002710 0.026701" rpy="0 0 0"/><mass value="0.09073"/>
+      <inertia ixx="5.1909e-05" ixy="2.8476e-06" ixz="-2.1933e-06" iyy="5.2274e-05" iyz="2.0574e-06" izz="7.9892e-05"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/base_link_printed.stl"/></geometry><material name="base_link_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/base_link_printed.stl"/></geometry></collision>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/base_link_servo.stl"/></geometry><material name="base_link_servo"><color rgba="0.12 0.12 0.12 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/base_link_servo.stl"/></geometry></collision>
+  </link>
+  <link name="waist">
+    <inertial><origin xyz="0.003724 0.023087 0.033027" rpy="0 0 0"/><mass value="0.08031"/>
+      <inertia ixx="3.0558e-05" ixy="-2.3606e-06" ixz="-3.8576e-06" iyy="2.7248e-05" iyz="-8.2409e-06" izz="3.0075e-05"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/waist_printed.stl"/></geometry><material name="waist_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/waist_printed.stl"/></geometry></collision>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/waist_servo.stl"/></geometry><material name="waist_servo"><color rgba="0.12 0.12 0.12 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/waist_servo.stl"/></geometry></collision>
+  </link>
+  <link name="arm_01">
+    <inertial><origin xyz="-0.010322 -0.011968 0.058767" rpy="0 0 0"/><mass value="0.02395"/>
+      <inertia ixx="3.9595e-05" ixy="1.8123e-08" ixz="7.0211e-06" iyy="4.2799e-05" iyz="-4.7791e-08" izz="4.8010e-06"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/arm_01_printed.stl"/></geometry><material name="arm_01_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/arm_01_printed.stl"/></geometry></collision>
+  </link>
+  <link name="arm_02">
+    <inertial><origin xyz="0.021499 0.017348 -0.001328" rpy="0 0 0"/><mass value="0.08270"/>
+      <inertia ixx="9.2765e-06" ixy="1.2203e-05" ixz="3.5044e-06" iyy="6.0444e-05" iyz="-7.4613e-07" izz="6.3856e-05"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/arm_02_printed.stl"/></geometry><material name="arm_02_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/arm_02_printed.stl"/></geometry></collision>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/arm_02_servo.stl"/></geometry><material name="arm_02_servo"><color rgba="0.12 0.12 0.12 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/arm_02_servo.stl"/></geometry></collision>
+  </link>
+  <link name="arm_03">
+    <inertial><origin xyz="0.022906 -0.001897 0.001714" rpy="0 0 0"/><mass value="0.01514"/>
+      <inertia ixx="1.2611e-06" ixy="6.7659e-08" ixz="5.5992e-08" iyy="2.0579e-06" iyz="3.7874e-08" izz="1.8521e-06"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/arm_03_printed.stl"/></geometry><material name="arm_03_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/arm_03_printed.stl"/></geometry></collision>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/arm_03_servo.stl"/></geometry><material name="arm_03_servo"><color rgba="0.12 0.12 0.12 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/arm_03_servo.stl"/></geometry></collision>
+  </link>
+  <link name="gripper_base">
+    <inertial><origin xyz="0.023128 0.011520 -0.022446" rpy="0 0 0"/><mass value="0.01485"/>
+      <inertia ixx="3.1237e-06" ixy="-8.0527e-07" ixz="1.1665e-06" iyy="3.3537e-06" iyz="1.0506e-06" izz="3.2723e-06"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_base_printed.stl"/></geometry><material name="gripper_base_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_base_printed.stl"/></geometry></collision>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_base_servo.stl"/></geometry><material name="gripper_base_servo"><color rgba="0.12 0.12 0.12 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_base_servo.stl"/></geometry></collision>
+  </link>
+  <link name="gripper_gear2">
+    <inertial><origin xyz="0.003210 0.003448 -0.003206" rpy="0 0 0"/><mass value="0.00095"/>
+      <inertia ixx="1.2626e-07" ixy="-4.0511e-08" ixz="3.9969e-08" iyy="8.4372e-08" iyz="3.2227e-08" izz="1.2360e-07"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_gear2_printed.stl"/></geometry><material name="gripper_gear2_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_gear2_printed.stl"/></geometry></collision>
+  </link>
+  <link name="finger_2">
+    <inertial><origin xyz="0.016830 -0.002590 -0.021295" rpy="0 0 0"/><mass value="0.00201"/>
+      <inertia ixx="3.9852e-07" ixy="6.3665e-09" ixz="2.9435e-07" iyy="6.2677e-07" iyz="-9.9174e-09" izz="2.7155e-07"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/finger_2_printed.stl"/></geometry><material name="finger_2_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/finger_2_printed.stl"/></geometry></collision>
+  </link>
+  <link name="rocker_2">
+    <inertial><origin xyz="0.008170 0.010627 -0.007784" rpy="0 0 0"/><mass value="0.00059"/>
+      <inertia ixx="6.6055e-08" ixy="-2.4390e-08" ixz="8.9156e-09" iyy="6.4620e-08" iyz="2.7233e-08" izz="7.2515e-08"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/rocker_2_printed.stl"/></geometry><material name="rocker_2_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/rocker_2_printed.stl"/></geometry></collision>
+  </link>
+  <link name="gripper_gear1">
+    <inertial><origin xyz="0.003088 -0.001996 -0.004238" rpy="0 0 0"/><mass value="0.00098"/>
+      <inertia ixx="1.2823e-07" ixy="2.1449e-08" ixz="5.1474e-08" iyy="1.1231e-07" iyz="-3.8127e-08" izz="9.4548e-08"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_gear1_printed.stl"/></geometry><material name="gripper_gear1_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/gripper_gear1_printed.stl"/></geometry></collision>
+  </link>
+  <link name="finger_1">
+    <inertial><origin xyz="0.017092 0.009522 -0.018990" rpy="0 0 0"/><mass value="0.00201"/>
+      <inertia ixx="3.9369e-07" ixy="-1.0550e-07" ixz="2.7603e-07" iyy="5.8126e-07" iyz="1.1802e-07" izz="3.2189e-07"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/finger_1_printed.stl"/></geometry><material name="finger_1_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/finger_1_printed.stl"/></geometry></collision>
+  </link>
+  <link name="rocker_1">
+    <inertial><origin xyz="0.008004 -0.006847 -0.011371" rpy="0 0 0"/><mass value="0.00059"/>
+      <inertia ixx="6.6879e-08" ixy="1.9163e-08" ixz="1.7351e-08" iyy="8.4878e-08" iyz="-2.2026e-08" izz="5.1432e-08"/></inertial>
+    <visual><geometry><mesh filename="package://robotic_arm_description/meshes/rocker_1_printed.stl"/></geometry><material name="rocker_1_printed"><color rgba="0.20 0.45 0.95 1"/></material></visual>
+    <collision><geometry><mesh filename="package://robotic_arm_description/meshes/rocker_1_printed.stl"/></geometry></collision>
+  </link>
+  <joint name="waist_joint" type="revolute">
+    <parent link="base_link"/><child link="waist"/>
+    <origin xyz="0.000000 0.000000 0.052400" rpy="0 0 0"/>
+    <axis xyz="0.000000 0.000000 1.000000"/>
+    <limit lower="-1.5708" upper="1.5708" effort="2.0" velocity="5.0"/>
+  </joint>
+  <joint name="shoulder_joint" type="revolute">
+    <parent link="waist"/><child link="arm_01"/>
+    <origin xyz="0.010998 0.007307 0.043703" rpy="0 0 0"/>
+    <axis xyz="0.000000 1.000000 0.000000"/>
+    <limit lower="-1.5708" upper="1.5708" effort="1.0" velocity="5.0"/>
+  </joint>
+  <joint name="elbow_joint" type="revolute">
+    <parent link="arm_01"/><child link="arm_02"/>
+    <origin xyz="-0.020388 -0.000000 0.118878" rpy="0 0 0"/>
+    <axis xyz="-0.000000 1.000000 0.000000"/>
+    <limit lower="-1.5708" upper="1.5708" effort="1.0" velocity="5.0"/>
+  </joint>
+  <joint name="wrist_roll_joint" type="revolute">
+    <parent link="arm_02"/><child link="arm_03"/>
+    <origin xyz="0.087651 0.006500 -0.008967" rpy="0 0 0"/>
+    <axis xyz="0.998036 -0.000000 -0.062647"/>
+    <limit lower="-1.5708" upper="1.5708" effort="0.18" velocity="4.0"/>
+  </joint>
+  <joint name="wrist_pitch_joint" type="revolute">
+    <parent link="arm_03"/><child link="gripper_base"/>
+    <origin xyz="0.028041 -0.014418 -0.001160" rpy="0 0 0"/>
+    <axis xyz="0.012395 0.980232 0.197462"/>
+    <limit lower="-1.5708" upper="1.5708" effort="0.18" velocity="4.0"/>
+  </joint>
+  <joint name="gripper_joint" type="revolute">
+    <parent link="gripper_base"/><child link="gripper_gear2"/>
+    <origin xyz="0.041066 0.018764 -0.013432" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.5500" upper="0.8000" effort="0.18" velocity="4.0"/>
+  </joint>
+  <joint name="finger_2_joint" type="revolute">
+    <parent link="gripper_gear2"/><child link="finger_2"/>
+    <origin xyz="0.011432 0.021908 -0.019338" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.8000" upper="0.5500" effort="0.18" velocity="4.0"/>
+    <mimic joint="gripper_joint" multiplier="-1" offset="0"/>
+  </joint>
+  <joint name="rocker_2_joint" type="revolute">
+    <parent link="gripper_base"/><child link="rocker_2"/>
+    <origin xyz="0.048936 0.013768 -0.034197" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.5500" upper="0.8000" effort="0.18" velocity="4.0"/>
+    <mimic joint="gripper_joint" multiplier="1" offset="0"/>
+  </joint>
+  <joint name="gripper_gear1_joint" type="revolute">
+    <parent link="gripper_base"/><child link="gripper_gear1"/>
+    <origin xyz="0.040732 -0.007604 -0.018744" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.8000" upper="0.5500" effort="0.18" velocity="4.0"/>
+    <mimic joint="gripper_joint" multiplier="-1" offset="0"/>
+  </joint>
+  <joint name="finger_1_joint" type="revolute">
+    <parent link="gripper_gear1"/><child link="finger_1"/>
+    <origin xyz="0.010949 -0.013080 -0.026337" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.5500" upper="0.8000" effort="0.18" velocity="4.0"/>
+    <mimic joint="gripper_joint" multiplier="1" offset="0"/>
+  </joint>
+  <joint name="rocker_1_joint" type="revolute">
+    <parent link="gripper_base"/><child link="rocker_1"/>
+    <origin xyz="0.048812 0.003966 -0.036172" rpy="0 0 0"/>
+    <axis xyz="0.769249 -0.135511 0.624414"/>
+    <limit lower="-0.8000" upper="0.5500" effort="0.18" velocity="4.0"/>
+    <mimic joint="gripper_joint" multiplier="-1" offset="0"/>
+  </joint>
+  <link name="gripper_tip"/>
+  <joint name="gripper_tip_joint" type="fixed">
+    <parent link="gripper_base"/><child link="gripper_tip"/>
+    <origin xyz="0.089361 0.017610 -0.083189" rpy="0 0 0"/>
+  </joint>
+</robot>

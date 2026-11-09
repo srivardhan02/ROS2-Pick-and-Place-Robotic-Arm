@@ -1,0 +1,17 @@
+# URDF joint (radians)  ->  real servo angle (degrees, 0-180)
+#   servo_angle = center + direction * degrees(joint)
+# Order = BASE, SHOULDER, ELBOW, WRIST1, WRIST2
+rviz_to_arm:
+  ros__parameters:
+    urdf_joints: ["waist_joint", "shoulder_joint", "elbow_joint",
+                  "wrist_roll_joint", "wrist_pitch_joint"]
+    arm_joints:  ["BASE", "SHOULDER", "ELBOW", "WRIST1", "WRIST2"]
+    directions: [1.0, -1.0, 1.0, 1.0, 1.0]        # -1.0 if a joint moves the wrong way
+    centers:    [90.0, 90.0, 90.0, 90.0, 90.0]   # servo angle when the URDF joint is 0
+
+    gripper_urdf_joint: "gripper_joint"
+    gripper_arm_joint: "GRIPPER"
+    gripper_urdf_closed: -0.55     # rad
+    gripper_urdf_open: 0.80        # rad
+    gripper_servo_closed: 40.0     # deg  <-- tune to your real gripper
+    gripper_servo_open: 140.0      # deg  <-- tune to your real gripper

@@ -1,0 +1,24 @@
+udp_camera_node:
+  ros__parameters:
+    port: 5005
+    topic: /camera/image/compressed
+    frame_id: esp32_cam
+    show: false
+    detect_qr: false
+    qr_topic: /qr/data
+    stale_timeout: 0.5     # seconds before an incomplete frame is dropped
+    rcvbuf_mb: 4
+    rotate_180: true       # rotate the shown image 180 deg
+    rotate_published: false # also rotate the image on the topic (re-encodes JPEG)
+    qr_gap: 2.0            # QR must leave view this long before the same text triggers again
+
+qr_gripper_node:
+  ros__parameters:
+    port: /dev/ttyACM0     # the GRIPPER ESP32 (not the arm ESP32)
+    baud_rate: 115200
+    qr_topic: /qr/data
+    trigger_text: ""       # "" = any QR; or set e.g. "PICK" to react to one code only
+    gripper_angle: 0       # QR in view  -> closed
+    release_angle: 90      # QR not seen -> open
+    release_timeout: 1.5   # seconds without QR before opening
+    joint: GRIPPER

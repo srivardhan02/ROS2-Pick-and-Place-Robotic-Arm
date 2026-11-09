@@ -1,0 +1,8 @@
+robot_arm_controller:
+  ros__parameters:
+    port: "/dev/ttyUSB0"        # "" = pick port in the GUI
+    baud_rate: 115200
+    save_file: ""               # "" = ~/robot_arm_positions.json
+    step_delay: 0.04            # s between interpolation steps
+    settle_seconds: 0.4         # s pause after each target
+    degrees_per_step: 2
